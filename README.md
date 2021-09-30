@@ -46,7 +46,7 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 
 ## Screens
 
-Web application
+Web application\
 Home
 
 <img src=".github/localhost_3000.png" alt="Home on Desktop">
@@ -55,7 +55,7 @@ Cart
 
 <img src=".github/localhost_3000_cart.png" alt="Cart on Desktop">
 
-Responsive design
+Responsive design\
 Home
 
 <img src=".github/localhost_3000_moto_g4.png" width="350" alt="Home on Mobile">
