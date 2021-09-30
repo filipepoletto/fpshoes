@@ -13,18 +13,25 @@ export const Container = styled.div`
     align-items: center;
 
     button {
-      background: #7159c1;
+      background: #0c853e;
       color: #fff;
       border: 0;
-      border-radius: 4px;
+      border-radius: 32px;
       padding: 12px 20px;
       font-weight: bold;
       text-transform: uppercase;
       transition: background 0.2s;
 
       &:hover {
-        background: ${darken(0.06, '#7159c1')};
+        background: ${darken(0.06, '#0c853e')};
       }
+    }
+  }
+
+  @media (max-width: 600px) {
+    footer {
+      flex-direction: column-reverse;
+      gap: 20px;
     }
   }
 `;
@@ -78,20 +85,40 @@ export const ProductTable = styled.table`
     padding: 6px;
 
     svg {
-      color: #7159c1;
+      color: #0c853e;
       transition: color 0.2s;
     }
 
     &:hover {
       svg {
-        color: ${darken(0.06, '#7159c1')};
+        color: ${darken(0.06, '#0c853e')};
       }
     }
 
     &:disabled {
       svg {
-        color: ${lighten(0.25, '#7159c1')};
+        color: ${lighten(0.25, '#0c853e')};
         cursor: not-allowed;
+      }
+    }
+  }
+
+  @media (max-width: 600px) {
+    thead {
+      display: none;
+    }
+
+    tbody tr {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    div {
+      justify-content: center;
+
+      input {
+        text-align: center;
       }
     }
   }
@@ -102,7 +129,7 @@ export const Total = styled.div`
   align-items: baseline;
 
   span {
-    color: #999;
+    color: #ccc;
     font-weight: bold;
   }
 

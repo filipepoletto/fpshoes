@@ -33,10 +33,10 @@ export const ProductList = styled.ul`
     }
 
     button {
-      background: #7159c1;
+      background: #0c853e;
       color: #fff;
       border: 0;
-      border-radius: 4px;
+      border-radius: 32px;
       overflow: hidden;
       margin-top: auto;
 
@@ -45,7 +45,7 @@ export const ProductList = styled.ul`
       transition: background 0.2s;
 
       &:hover {
-        background: ${darken(0.06, '#7159c1')};
+        background: ${darken(0.06, '#0c853e')};
       }
 
       div {
@@ -65,5 +65,10 @@ export const ProductList = styled.ul`
         font-weight: bold;
       }
     }
+  }
+
+  @media (max-width: 768px) {
+    display: flex;
+    overflow: auto;
   }
 `;
